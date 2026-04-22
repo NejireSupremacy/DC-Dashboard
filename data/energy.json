@@ -1,0 +1,91 @@
+{
+  "pue": [
+    {
+      "Scope": "Global industry average",
+      "PUE": 1.56,
+      "Context": "Average annual PUE reported by operators for their largest data center.",
+      "Year": 2024,
+      "Source URL": "https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2024.GlobalDataCenterSurvey.Report.pdf"
+    },
+    {
+      "Scope": "Google fleet average",
+      "PUE": 1.09,
+      "Context": "Average annual PUE for Google's global fleet.",
+      "Year": 2024,
+      "Source URL": "https://datacenters.google/efficiency/"
+    },
+    {
+      "Scope": "Google best campus",
+      "PUE": 1.06,
+      "Context": "Lowest trailing-twelve-month PUE reported for Oregon.",
+      "Year": 2024,
+      "Source URL": "https://datacenters.google/efficiency/"
+    },
+    {
+      "Scope": "AWS global average",
+      "PUE": 1.15,
+      "Context": "Global PUE published by AWS for its data center operations.",
+      "Year": 2024,
+      "Source URL": "https://aws.amazon.com/sustainability/data-centers/"
+    },
+    {
+      "Scope": "AWS best reported site",
+      "PUE": 1.04,
+      "Context": "Best-performing site cited when AWS first disclosed fleet PUE.",
+      "Year": 2023,
+      "Source URL": "https://www.datacenterdynamics.com/en/news/aws-global-data-centers-achieved-pue-of-115-in-2023/"
+    },
+    {
+      "Scope": "Meta efficient build benchmark",
+      "PUE": 1.09,
+      "Context": "PUE for buildings completed in 2022, disclosed in 2024 climate reporting.",
+      "Year": 2022,
+      "Source URL": "https://sustainability.atmeta.com/wp-content/uploads/2024/02/2023_Meta_CDP_Climate-Change-Survey.pdf"
+    }
+  ],
+  "mexico_notes": [
+    {
+      "Observation": "No public 2023-2025 Mexico-wide average PUE was found in accessible sources.",
+      "Planning takeaway": "Use representative disclosed facility values instead of claiming a national average.",
+      "Year": 2025,
+      "Source URL": "https://www.cleanbridge.co/insights/energy-transition/cleanbridge-global-data-center-market-report-2025/regional-market-overviews-gdc2025/mexico-gdc2025/"
+    },
+    {
+      "Observation": "Modern mid-tier facilities in Mexico are commonly described in the 1.2-1.5 PUE band.",
+      "Planning takeaway": "Good target range for current enterprise and colocation builds in Mexico.",
+      "Year": 2025,
+      "Source URL": "https://www.nextmsc.com/report/mexico-data-center-market"
+    }
+  ],
+  "breakdown": [
+    {
+      "Category": "IT load",
+      "Share (%)": 51,
+      "Notes": "Average share from a 2024 benchmark report.",
+      "Year": 2024,
+      "Source URL": "https://www.nea.gov.sg/docs/default-source/cmd-documents/energy-efficiency/nea-dc-energy-benchmarking-summary--final-report-%283%29.pdf"
+    },
+    {
+      "Category": "Cooling, fans, pumps, other mechanical",
+      "Share (%)": 37,
+      "Notes": "Mechanical systems combined; Schneider also states cooling is around 40% of energy use.",
+      "Year": 2024,
+      "Source URL": "https://www.nea.gov.sg/docs/default-source/cmd-documents/energy-efficiency/nea-dc-energy-benchmarking-summary--final-report-%283%29.pdf"
+    },
+    {
+      "Category": "UPS, distribution losses, lighting",
+      "Share (%)": 12,
+      "Notes": "Electrical overhead bucket in the benchmark report.",
+      "Year": 2024,
+      "Source URL": "https://www.nea.gov.sg/docs/default-source/cmd-documents/energy-efficiency/nea-dc-energy-benchmarking-summary--final-report-%283%29.pdf"
+    }
+  ],
+  "cooling_note": [
+    {
+      "Observation": "Cooling alone can account for around 40% of total data center energy use.",
+      "Why it matters": "Cooling is still the largest controllable overhead lever after IT load.",
+      "Year": 2025,
+      "Source URL": "https://www.se.com/us/en/work/solutions/local/data-centers-and-networks/data-center-cooling/"
+    }
+  ]
+}

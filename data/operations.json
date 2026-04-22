@@ -1,0 +1,81 @@
+{
+  "tiers": [
+    {
+      "Tier": "Tier I",
+      "Availability benchmark": "99.671%",
+      "Annual downtime (minutes)": 1728.0,
+      "Operating profile": "Basic capacity, single path, shutdowns required for maintenance.",
+      "Year": 2025,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/Uptime-data-center-tier-standards"
+    },
+    {
+      "Tier": "Tier II",
+      "Availability benchmark": "99.741%",
+      "Annual downtime (minutes)": 1368.0,
+      "Operating profile": "Redundant capacity components, but maintenance can still require shutdowns.",
+      "Year": 2025,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/Uptime-data-center-tier-standards"
+    },
+    {
+      "Tier": "Tier III",
+      "Availability benchmark": "99.982%",
+      "Annual downtime (minutes)": 94.6,
+      "Operating profile": "Concurrently maintainable with redundant paths and no planned shutdown for maintenance.",
+      "Year": 2025,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/Uptime-data-center-tier-standards"
+    },
+    {
+      "Tier": "Tier IV",
+      "Availability benchmark": "99.995%",
+      "Annual downtime (minutes)": 26.3,
+      "Operating profile": "Fault tolerant with multiple isolated systems and highest resilience level.",
+      "Year": 2025,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/Uptime-data-center-tier-standards"
+    }
+  ],
+  "notes": [
+    {
+      "Observation": "Current Uptime Institute Tier documentation focuses on topology, maintainability, and fault tolerance by tier.",
+      "Why it matters": "Use the uptime percentages as planning benchmarks, not as contractual SLA values embedded in the current Tier standard.",
+      "Year": 2025,
+      "Source URL": "https://ats.uptimeinstitute.com/tiers"
+    }
+  ],
+  "mac": [
+    {
+      "Category": "Move",
+      "Typical work": "Rack relocation, cabinet migration, data hall moves, reconnecting power and network paths.",
+      "Why teams use it": "Supports capacity rebalancing and floor-space optimization.",
+      "Year": 2023,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/moves-adds-and-changes-MAC"
+    },
+    {
+      "Category": "Add",
+      "Typical work": "New server, switch, storage, firewall, or software installation.",
+      "Why teams use it": "Scales infrastructure for new business demand.",
+      "Year": 2023,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/moves-adds-and-changes-MAC"
+    },
+    {
+      "Category": "Change",
+      "Typical work": "Configuration updates, hardware refresh, firmware change, DR adjustment, replacement of aging gear.",
+      "Why teams use it": "Keeps production aligned with performance, security, and resilience targets.",
+      "Year": 2023,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/moves-adds-and-changes-MAC"
+    },
+    {
+      "Category": "Install / IMAC",
+      "Typical work": "Structured rollout that combines installs, moves, adds, and changes under one work order.",
+      "Why teams use it": "Used by enterprise teams when change scope is broader than a simple MAC ticket.",
+      "Year": 2025,
+      "Source URL": "https://www.procurri.com/2025/07/10/everything-you-need-to-know-about-data-center-relocation/"
+    },
+    {
+      "Category": "Decommission / Migration",
+      "Typical work": "Retiring old assets, data center consolidation, migration to a new hall or cloud environment.",
+      "Why teams use it": "Reduces stranded capacity and enables modernization programs.",
+      "Year": 2023,
+      "Source URL": "https://www.techtarget.com/searchdatacenter/definition/moves-adds-and-changes-MAC"
+    }
+  ]
+}

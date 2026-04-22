@@ -1,0 +1,122 @@
+{
+  "overview": [
+    {
+      "Metric": "Aggregate Mexico market capacity",
+      "Value": "587.2 MW total",
+      "Context": "111.5 MW live and 475.7 MW under construction as of April 2024.",
+      "Year": 2024,
+      "Source URL": "https://www.cleanbridge.co/insights/energy-transition/cleanbridge-global-data-center-market-report-2025/regional-market-overviews-gdc2025/mexico-gdc2025/"
+    },
+    {
+      "Metric": "Operational capacity used in country snapshot",
+      "Value": "112 MW live",
+      "Context": "Rounded operational capacity published in the same Mexico overview.",
+      "Year": 2024,
+      "Source URL": "https://www.cleanbridge.co/insights/energy-transition/cleanbridge-global-data-center-market-report-2025/regional-market-overviews-gdc2025/mexico-gdc2025/"
+    },
+    {
+      "Metric": "Market size",
+      "Value": "USD 804 million",
+      "Context": "Base market size for 2023.",
+      "Year": 2023,
+      "Source URL": "https://www.globenewswire.com/news-release/2024/03/15/2847108/28124/en/Mexico-Data-Center-Market-Investment-Analysis-Report-2024-2029-Featuring-Key-DC-Investors-Ascenty-Equinix-HostDime-Kio-Networks-MTP-Microsoft-ODATA-and-Scala-Data-Centers.html"
+    },
+    {
+      "Metric": "Projected market size",
+      "Value": "USD 1.319 billion",
+      "Context": "Forecast for 2029.",
+      "Year": 2029,
+      "Source URL": "https://www.globenewswire.com/news-release/2024/03/15/2847108/28124/en/Mexico-Data-Center-Market-Investment-Analysis-Report-2024-2029-Featuring-Key-DC-Investors-Ascenty-Equinix-HostDime-Kio-Networks-MTP-Microsoft-ODATA-and-Scala-Data-Centers.html"
+    },
+    {
+      "Metric": "Projected CAGR",
+      "Value": "8.60%",
+      "Context": "Forecast CAGR for 2023-2029.",
+      "Year": 2024,
+      "Source URL": "https://www.globenewswire.com/news-release/2024/03/15/2847108/28124/en/Mexico-Data-Center-Market-Investment-Analysis-Report-2024-2029-Featuring-Key-DC-Investors-Ascenty-Equinix-HostDime-Kio-Networks-MTP-Microsoft-ODATA-and-Scala-Data-Centers.html"
+    }
+  ],
+  "regions": [
+    {
+      "Market": "Queretaro",
+      "Capacity (MW)": 160.0,
+      "Growth signal": "The state's pipeline was estimated at about 600 MW and it concentrated 79% of national capacity in 2025 reporting.",
+      "Year": 2025,
+      "Source URL": "https://www.theguardian.com/global-development/2024/sep/25/mexico-datacentre-amazon-google-queretaro-water-electricity"
+    },
+    {
+      "Market": "Mexico City / metro",
+      "Capacity (MW)": 21.2,
+      "Growth signal": "Remains a core enterprise and interconnection market, but expansion is being outpaced by Queretaro.",
+      "Year": 2025,
+      "Source URL": "https://thequeretaropost.com/2026/02/19/queretaro-concentrates-79-of-the-national-data-center-capacity-and-aims-for-1120-mw-in-2030/"
+    },
+    {
+      "Market": "Monterrey",
+      "Capacity (MW)": 18.3,
+      "Growth signal": "Momentum strengthened with Equinix's MO2 launch and nearshoring-led connectivity demand.",
+      "Year": 2025,
+      "Source URL": "https://thequeretaropost.com/2026/02/19/queretaro-concentrates-79-of-the-national-data-center-capacity-and-aims-for-1120-mw-in-2030/"
+    }
+  ],
+  "operators": [
+    {
+      "Operator": "Equinix",
+      "Mexico footprint": "3 data centers in Mexico City and Monterrey; about 150,000 sq ft of colocation space.",
+      "Signal": "Carrier-neutral interconnection and AI-ready colocation positioning.",
+      "Year": 2025,
+      "Source URL": "https://www.equinix.com/data-centers/americas-colocation/mexico-colocation"
+    },
+    {
+      "Operator": "KIO Networks / KIO Data Centers",
+      "Mexico footprint": "QRO1 + QRO2 form a major digital hub; nearly 19 MW installed in Queretaro after QRO2 launch.",
+      "Signal": "Expanding capacity for high-density and critical workloads.",
+      "Year": 2025,
+      "Source URL": "https://kiodatacenters.com/en/newsroom-en/kio-data-centers-launches-qro2-expanding-mexico-s-most-important-digital-hub-for-critical-industries?hs_amp=true"
+    },
+    {
+      "Operator": "Telmex / Triara",
+      "Mexico footprint": "Data centers in Queretaro, Monterrey, Guadalajara, Cancun, and Mexico City.",
+      "Signal": "ICREA VI certification and local enterprise hosting presence.",
+      "Year": 2024,
+      "Source URL": "https://telmex.com/web/acerca-de-telmex/w/los-centros-de-datos-de-triara-consolidan-su-liderazgo-y-confiabilidad-a-nivel-mundial-con-la-obtencion-de-la-certificacion-internacional-icrea-vi"
+    },
+    {
+      "Operator": "MCM Telecom / MCM TechCo",
+      "Mexico footprint": "25,000 kW core + edge capacity and 32,000 m2 across core + edge footprint.",
+      "Signal": "Neutral interconnection, core data center plus distributed edge proposition.",
+      "Year": 2025,
+      "Source URL": "https://www.mcmtelecom.com/data-center"
+    },
+    {
+      "Operator": "Ascenty",
+      "Mexico footprint": "3 data centers in Queretaro totaling 81 MW and 64,000 m2.",
+      "Signal": "Strong hyperscale-oriented buildout in Queretaro.",
+      "Year": 2025,
+      "Source URL": "https://ascenty.com/es/data-centers-es/ubicacion/mexico/"
+    }
+  ],
+  "models": [
+    {
+      "Model": "Colocation",
+      "Share / trend": "83.10% of Mexico market revenue.",
+      "Interpretation": "Still the dominant commercial model for enterprise and outsourced infrastructure demand.",
+      "Year": 2025,
+      "Source URL": "https://www.mordorintelligence.com/industry-reports/mexico-data-center-market"
+    },
+    {
+      "Model": "Hyperscale self-build",
+      "Share / trend": "Growing quickly around large campuses in Queretaro as cloud regions localize workloads.",
+      "Interpretation": "Major cloud entrants are pulling market gravity toward larger power blocks.",
+      "Year": 2024,
+      "Source URL": "https://www.cleanbridge.co/insights/energy-transition/cleanbridge-global-data-center-market-report-2025/regional-market-overviews-gdc2025/mexico-gdc2025/"
+    },
+    {
+      "Model": "Enterprise edge / distributed edge",
+      "Share / trend": "Fastest-growth segment at 20.05% CAGR in cited market analysis.",
+      "Interpretation": "Driven by low-latency content, 5G, OTT, gaming, and regional enterprise demand.",
+      "Year": 2025,
+      "Source URL": "https://www.mordorintelligence.com/industry-reports/mexico-data-center-market"
+    }
+  ]
+}

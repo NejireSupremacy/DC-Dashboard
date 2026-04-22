@@ -1,0 +1,100 @@
+{
+  "tia942": [
+    {
+      "Rating": "Rated-1",
+      "Physical security summary": "Limited protection against physical events; single-path site infrastructure.",
+      "What it implies": "Entry and perimeter controls exist, but resilience against disruption is basic.",
+      "Year": 2025,
+      "Source URL": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/"
+    },
+    {
+      "Rating": "Rated-2",
+      "Physical security summary": "Improved protection against physical events with redundant components.",
+      "What it implies": "Better resilience for building systems, but single distribution path remains.",
+      "Year": 2025,
+      "Source URL": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/"
+    },
+    {
+      "Rating": "Rated-3",
+      "Physical security summary": "Protection against most physical events with concurrently maintainable design.",
+      "What it implies": "Higher expectation for controlled access, monitoring, and maintainability during live operations.",
+      "Year": 2025,
+      "Source URL": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/"
+    },
+    {
+      "Rating": "Rated-4",
+      "Physical security summary": "Protection against all physical events with fault-tolerant design.",
+      "What it implies": "Highest resilience posture for mission-critical operations and security continuity.",
+      "Year": 2025,
+      "Source URL": "https://tiaonline.org/products-and-services/tia942certification/tia-942-certifications-ratings/"
+    }
+  ],
+  "iso27001": [
+    {
+      "Domain": "Organizational controls",
+      "Why it matters in a data center": "Policies, access governance, supplier control, incident planning, and business continuity decisions.",
+      "Key emphasis": "Vendor governance, cloud services, incident response, and ICT continuity readiness.",
+      "Year": 2025,
+      "Source URL": "https://www.vanta.com/resources/iso-27001-controls"
+    },
+    {
+      "Domain": "People controls",
+      "Why it matters in a data center": "Screening, awareness, responsibilities, and secure remote work for staff and contractors.",
+      "Key emphasis": "Training and role-based accountability for operators and security teams.",
+      "Year": 2025,
+      "Source URL": "https://www.vanta.com/resources/iso-27001-controls"
+    },
+    {
+      "Domain": "Physical controls",
+      "Why it matters in a data center": "Secure areas, equipment protection, physical monitoring, and working-in-secure-area procedures.",
+      "Key emphasis": "Perimeters, surveillance, cages, and equipment handling.",
+      "Year": 2025,
+      "Source URL": "https://www.vanta.com/resources/iso-27001-controls"
+    },
+    {
+      "Domain": "Technological controls",
+      "Why it matters in a data center": "Network protection, monitoring, configuration management, and data protection for hosted workloads.",
+      "Key emphasis": "Logging, segmentation, secure configuration, and privileged access.",
+      "Year": 2025,
+      "Source URL": "https://www.vanta.com/resources/iso-27001-controls"
+    }
+  ],
+  "controls": [
+    {
+      "Control": "24x7 onsite security staffing",
+      "Operational value": "Maintains human response and escort capability around the clock.",
+      "Year": 2025,
+      "Source URL": "https://www.flexential.com/resources/blog/data-center-colocation-security"
+    },
+    {
+      "Control": "Badge + biometric or multi-factor access",
+      "Operational value": "Restricts entry to approved personnel and strengthens auditability.",
+      "Year": 2025,
+      "Source URL": "https://www.flexential.com/resources/blog/data-center-colocation-security"
+    },
+    {
+      "Control": "Mantraps / anti-tailgating vestibules",
+      "Operational value": "Prevents piggybacking into secure zones and supports layered entry.",
+      "Year": 2024,
+      "Source URL": "https://www.databank.com/resources/blogs/security-measures-in-colocation-data-centers/"
+    },
+    {
+      "Control": "Continuous CCTV and video retention",
+      "Operational value": "Creates forensic traceability across perimeter, lobby, and data halls.",
+      "Year": 2024,
+      "Source URL": "https://www.databank.com/resources/blogs/security-measures-in-colocation-data-centers/"
+    },
+    {
+      "Control": "Perimeter barriers and monitored gates",
+      "Operational value": "Adds first-line protection for standalone campuses and loading zones.",
+      "Year": 2024,
+      "Source URL": "https://www.databank.com/resources/blogs/security-measures-in-colocation-data-centers/"
+    },
+    {
+      "Control": "Customer cages and cabinet-level locking",
+      "Operational value": "Extends security segmentation inside shared Tier III and Tier IV halls.",
+      "Year": 2025,
+      "Source URL": "https://www.flexential.com/resources/blog/data-center-colocation-security"
+    }
+  ]
+}

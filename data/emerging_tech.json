@@ -1,0 +1,63 @@
+{
+  "technologies": [
+    {
+      "Technology": "Direct liquid cooling",
+      "What is happening": "22% of surveyed operators already use it; 61% are considering it.",
+      "Maturity stage": "Early adoption in 2024, scaling through 2025-2027.",
+      "Timeline": "2024-2027",
+      "Why it matters": "Needed for dense AI racks that air cooling cannot support efficiently.",
+      "Year": 2024,
+      "Source URL": "https://datacenter.uptimeinstitute.com/rs/711-RIA-145/images/2024.Cooling.Survey.Report.pdf"
+    },
+    {
+      "Technology": "Immersion cooling",
+      "What is happening": "Implemented in less than 10% of data centers today and expected to become more common as racks exceed 150 kW.",
+      "Maturity stage": "Pilot / niche in 2025, broader adoption later in the decade.",
+      "Timeline": "2026-2030",
+      "Why it matters": "Supports very high-density AI clusters beyond practical air-cooling limits.",
+      "Year": 2025,
+      "Source URL": "https://www.jll.com/en-ae/insights/market-outlook/global-data-centers"
+    },
+    {
+      "Technology": "AI-optimized hardware and new rack design",
+      "What is happening": "New AWS components cut mechanical energy consumption by up to 46% during peak cooling, while custom silicon improves workload efficiency.",
+      "Maturity stage": "Mainstream in hyperscale roadmaps now.",
+      "Timeline": "2024-2030",
+      "Why it matters": "Efficiency gains increasingly come from chip, rack, and power-path co-design.",
+      "Year": 2024,
+      "Source URL": "https://aws.amazon.com/sustainability/data-centers/"
+    },
+    {
+      "Technology": "Firm low-carbon power (renewables + nuclear)",
+      "What is happening": "Meta launched an RFP for 1-4 GW of new nuclear capacity, and JLL expects total announced SMR gigawatts to double in 2025.",
+      "Maturity stage": "Renewable sourcing is mainstream; nuclear-backed capacity is early-stage.",
+      "Timeline": "2025-2030",
+      "Why it matters": "Power availability is becoming the binding constraint for AI-era campuses.",
+      "Year": 2025,
+      "Source URL": "https://sustainability.atmeta.com/blog/2024/12/03/accelerating-the-next-wave-of-nuclear-to-power-ai-innovation/"
+    },
+    {
+      "Technology": "Edge and modular distributed infrastructure",
+      "What is happening": "Edge demand is rising in Mexico and LatAm as low-latency workloads spread beyond core metros.",
+      "Maturity stage": "Selective commercial rollout with strong growth runway.",
+      "Timeline": "2025-2030",
+      "Why it matters": "Supports streaming, industrial IoT, gaming, and regional resilience use cases.",
+      "Year": 2025,
+      "Source URL": "https://www.mordorintelligence.com/industry-reports/mexico-data-center-market"
+    }
+  ],
+  "signals": [
+    {
+      "Signal": "Liquid-cooled infrastructure remains niche today but will become more predominant as next-generation CPUs and GPUs increase in power draw.",
+      "Analyst": "Gartner",
+      "Year": 2025,
+      "Source URL": "https://www.gartner.com/en/newsroom/press-releases/2024-12-11-gartner-identifies-the-top-trends-impacting-infrastructure-and-operations-for-2025"
+    },
+    {
+      "Signal": "Global data center growth is likely to sustain a baseline 15% CAGR through 2027.",
+      "Analyst": "JLL",
+      "Year": 2025,
+      "Source URL": "https://www.jll.com.mx/en/newsroom/global-data-center-demand-surges-despite-supply-and-power-constraints"
+    }
+  ]
+}
