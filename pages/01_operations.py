@@ -49,6 +49,71 @@ uptime_by_site = pd.DataFrame(
 st.plotly_chart(uptime_sla_by_site_gauge(uptime_by_site), use_container_width=True)
 
 section_intro(
+    "Incident History",
+    "Recent outage log used to practice operational review workflows. Values are simulated for coursework and not sourced from operator disclosures.",
+)
+incident_history = pd.DataFrame(
+    [
+        {
+            "Incident ID": "INC-2026-0418",
+            "Outage Date": "2026-04-18",
+            "Site": "Queretaro Campus",
+            "Service Impact": "Cooling loop B alert",
+            "Severity": "High",
+            "Resolution Time (minutes)": 84,
+        },
+        {
+            "Incident ID": "INC-2026-0409",
+            "Outage Date": "2026-04-09",
+            "Site": "Monterrey Hub",
+            "Service Impact": "Top-of-rack switch failure",
+            "Severity": "Medium",
+            "Resolution Time (minutes)": 57,
+        },
+        {
+            "Incident ID": "INC-2026-0327",
+            "Outage Date": "2026-03-27",
+            "Site": "CDMX Edge",
+            "Service Impact": "UPS battery string replacement",
+            "Severity": "Medium",
+            "Resolution Time (minutes)": 41,
+        },
+        {
+            "Incident ID": "INC-2026-0315",
+            "Outage Date": "2026-03-15",
+            "Site": "Queretaro Campus",
+            "Service Impact": "Planned maintenance overrun",
+            "Severity": "Low",
+            "Resolution Time (minutes)": 33,
+        },
+        {
+            "Incident ID": "INC-2026-0304",
+            "Outage Date": "2026-03-04",
+            "Site": "Monterrey Hub",
+            "Service Impact": "Generator synchronization issue",
+            "Severity": "High",
+            "Resolution Time (minutes)": 96,
+        },
+    ]
+)
+incident_history["Outage Date"] = pd.to_datetime(incident_history["Outage Date"])
+incident_history = incident_history.sort_values("Outage Date", ascending=False)
+
+incident_cols = st.columns(3)
+with incident_cols[0]:
+    st.metric("Incidents (90 days)", len(incident_history))
+with incident_cols[1]:
+    st.metric("Avg Resolution", f"{incident_history['Resolution Time (minutes)'].mean():.1f} min")
+with incident_cols[2]:
+    st.metric("Max Resolution", f"{incident_history['Resolution Time (minutes)'].max():.0f} min")
+
+st.dataframe(
+    incident_history,
+    use_container_width=True,
+    hide_index=True,
+)
+
+section_intro(
     "Important Context",
     "Current Uptime documentation is topology-focused, so the dashboard keeps a note beside the legacy uptime target table.",
 )
