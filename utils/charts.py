@@ -3,6 +3,7 @@ from __future__ import annotations
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 
 PALETTE = {
@@ -56,6 +57,53 @@ def tier_availability_chart(df: pd.DataFrame) -> go.Figure:
     chart.update_yaxes(categoryorder="array", categoryarray=df["Tier"].tolist(), automargin=True)
 
     return base_layout(chart, "Legacy Uptime Targets by Tier")
+
+
+def uptime_sla_by_site_gauge(df: pd.DataFrame) -> go.Figure:
+    chart = make_subplots(
+        rows=1,
+        cols=len(df),
+        specs=[[{"type": "indicator"} for _ in range(len(df))]],
+        subplot_titles=df["Site"].tolist(),
+    )
+
+    for idx, row in enumerate(df.to_dict("records"), start=1):
+        value = float(row["Uptime SLA (%)"])
+        chart.add_trace(
+            go.Indicator(
+                mode="gauge+number",
+                value=value,
+                number={"suffix": "%", "font": {"size": 30, "color": PALETTE["navy"]}},
+                gauge={
+                    "axis": {"range": [99.0, 100.0], "tickcolor": PALETTE["navy"]},
+                    "bar": {"color": PALETTE["teal"]},
+                    "bgcolor": "rgba(248,244,236,0.65)",
+                    "steps": [
+                        {"range": [99.0, 99.5], "color": "rgba(251,113,133,0.25)"},
+                        {"range": [99.5, 99.9], "color": "rgba(245,158,11,0.25)"},
+                        {"range": [99.9, 100.0], "color": "rgba(14,116,144,0.25)"},
+                    ],
+                    "threshold": {
+                        "line": {"color": PALETTE["coral"], "width": 4},
+                        "thickness": 0.8,
+                        "value": 99.95,
+                    },
+                },
+            ),
+            row=1,
+            col=idx,
+        )
+
+    chart.update_annotations(font={"color": PALETTE["navy"], "size": 14})
+    chart.update_layout(
+        title="Uptime SLA by Site",
+        title_font={"color": PALETTE["navy"], "size": 22},
+        paper_bgcolor="rgba(255,255,255,0.65)",
+        font={"family": "Georgia, serif", "color": PALETTE["navy"]},
+        margin={"l": 24, "r": 24, "t": 80, "b": 24},
+        height=360,
+    )
+    return chart
 
 
 def pue_comparison_chart(df: pd.DataFrame) -> go.Figure:
