@@ -80,6 +80,16 @@ def apply_theme(page_title: str, icon: str) -> None:
                 border-radius: 14px;
                 border: 1px solid var(--dc-border);
             }
+            div[data-testid="stDownloadButton"] button {
+                background: #94a3b8 !important;
+                color: #ffffff !important;
+                border: 1px solid #7c8aa0 !important;
+            }
+            div[data-testid="stDownloadButton"] button:hover {
+                background: #7c8aa0 !important;
+                color: #ffffff !important;
+                border: 1px solid #64748b !important;
+            }
             .stCheckbox label,
             .stRadio label,
             .stSelectbox label,
@@ -157,8 +167,21 @@ def section_intro(title: str, subtitle: str) -> None:
     st.caption(subtitle)
 
 
+def _download_filename(title: str) -> str:
+    normalized = "".join(char.lower() if char.isalnum() else "_" for char in title)
+    cleaned = "_".join(part for part in normalized.split("_") if part)
+    return f"{cleaned or 'table'}.csv"
+
+
 def render_source_table(df: pd.DataFrame, title: str = "Sources") -> None:
     st.markdown(f"### {title}")
+    st.download_button(
+        label="Descargar CSV",
+        data=df.to_csv(index=False).encode("utf-8-sig"),
+        file_name=_download_filename(title),
+        mime="text/csv",
+        key=f"download_{title}",
+    )
     st.dataframe(df, use_container_width=True, hide_index=True)
 
 
