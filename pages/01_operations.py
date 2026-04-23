@@ -47,7 +47,6 @@ uptime_by_site = pd.DataFrame(
     ]
 )
 st.plotly_chart(uptime_sla_by_site_gauge(uptime_by_site), use_container_width=True)
-render_source_table(uptime_by_site, "Simulated Uptime SLA by Site")
 
 section_intro(
     "Important Context",
